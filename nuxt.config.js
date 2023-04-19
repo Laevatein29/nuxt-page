@@ -27,7 +27,13 @@ export default {
     hoistUseStatements: true,
   },
 
-  plugins: ['~/plugins/directive/index.js'],
+  plugins: [
+    '~/plugins/directive/index.js',
+    '~/plugins/helpers.ts',
+    '~/plugins/element-ui.js',
+    '~/plugins/debounce.ts',
+    '~/plugins/message.ts',
+  ],
 
   components: {
     dirs: ['~/components', '~/components/icons', '~/blocks'],

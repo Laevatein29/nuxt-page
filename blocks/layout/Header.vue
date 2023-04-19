@@ -1,10 +1,8 @@
 <template>
   <div class="header">
     <nuxt-logo></nuxt-logo>
-    <div class="right-panel">
-      <language-switch></language-switch>
-      <div>Launch App</div>
-    </div>
+    <PathTabs />
+    <div class="right-panel">Tools</div>
   </div>
 </template>
 
@@ -24,11 +22,14 @@ export default Vue.extend({
   z-index: 100;
   padding: 0 20px;
   position: fixed;
-  color: $onSecondary;
+  color: $lightGreen;
+  background-color: $background;
+
   .right-panel {
-    @include flexR;
-    @include flexRGap(10px);
-    justify-content: flex-end;
+    height: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
   }
 }
 </style>
