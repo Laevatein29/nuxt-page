@@ -91,7 +91,7 @@ export default Vue.extend({
         instance: this.addInstance,
       }
     },
-    searchData() {
+    searchData(): any {
       return {
         portA: this.searchA,
         portB: this.searchB,
